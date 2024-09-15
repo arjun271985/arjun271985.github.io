@@ -1,3 +1,8 @@
+---
+layout: page
+title: Publications
+---
+
 # Publications
 
 Here are some of my recent publications:

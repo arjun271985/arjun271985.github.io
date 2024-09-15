@@ -41,7 +41,7 @@ For more details, please refer to my [Mallikarjuna_Thimmapuram.pdf]
 -
 
 # Publications:
-[publications](https://arjun271985.github.io/_pages/publications.md)
+[publications](./publications.md)
 
 
 # Talks

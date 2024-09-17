@@ -1,8 +1,18 @@
 ---
 layout: publications
-title: "Publications"
-permalink: /publications/
+title: Publications
 ---
+   
+<h1>Publications</h1>
+
+<ul>
+{% for publication in site.data.publications %}
+  <li>
+    <a href="{{ publication.url }}">{{ publication.title }}</a>
+    <p>{{ publication.description }}</p>
+  </li>
+{% endfor %}
+</ul>
 
 # Publications
 

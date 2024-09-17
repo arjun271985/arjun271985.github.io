@@ -1,15 +1,25 @@
----
-layout: publications
-title: publications
----
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <!-- Include any specific head elements for the publications page -->
+    {% include head.html %}
+    {% include head/custom.html %}
+  </head>
 
-<h1>publications</h1>
+  <body>
 
-<ul>
-{% for publication in site.data.publications %}
-  <li>
-    <a href="{{ publication.url }}">{{ publication.title }}</a>
-    <p>{{ publication.description }}</p>
-  </li>
-{% endfor %}
-</ul>
+    <div id="main" role="main">
+      <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+        {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+        <div class="page__inner-wrap">
+          <section class="page__content" itemprop="text">
+            {{ content }}
+          </section>
+        </div>
+      </article>
+    </div>
+
+    {% include scripts.html %}
+
+  </body>
+</html>

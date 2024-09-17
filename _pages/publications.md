@@ -1,7 +1,7 @@
 ---
-layout: page
-title: Publications
-
+layout: publications
+title: "Publications"
+permalink: /publications/
 ---
 
 # Publications
